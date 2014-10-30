@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>My To Do A</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="todo.css">
+		<script src="todo.js"></script>
+		<script src="handlebars-v1.3.0.js"></script>
+		<script id="scriptTodo" type="text/x-handlebars-template">
+			<li class="list-group-item"> 
+				<input type="checkbox" class="checkBox" name="chkChild"> 
+			 
+				<a href="javascript:void(0);" class="glyphicon glyphicon-remove"></a> 
+			</li>
+		</script>
+	</head>
+	<body>
+		<!-- <div class="main-container"> -->
+			<!-- <div class="container my-container"> -->
+			<div class="container">
+		    	<div id="header">
+		    		<div class="only-padding">
+		    			<h2> My Todo App <h2>
+		    		</div>
+		    		<div>
+		    			<input type="text" id="txtMessage" name="txtMessage" class="form-control" placeholder="What you want to do?">
+		    		</div>		    		
+		    	</div>
+
+		    	<div id="myBody" style="padding-top: 10px;">
+		    		<div id="tasks">
+						<ul class="nav nav-pills">
+							<li id="navAll" class="active"><a href="#">All</a></li>
+							<li id="navCompleted"><a href="#">Completed</a></li>
+							<li id="navPending"><a href="#">Pending</a></li>
+						</ul>
+		    		</div>
+
+		    		<div id="content" style="padding-top: 15px;">
+						<div class="checkbox" style="padding-left: 15px; ">
+							<label>
+								<input type="checkbox" id="chkSelectAll"> Select/Deselect All
+							</label>
+						</div>
+	    				<ul class="list-group">
+
+						</ul>
+		    		</div>
+		    	</div>
+
+		    	<div id="footer">
+		    		<button type="button" id="remove" class="btn btn-primary">Remove Completed</button>
+		    	</div>
+			</div>
+		 <!-- </div>	 -->
+	</body>
+</html>

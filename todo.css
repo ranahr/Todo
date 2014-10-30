@@ -1,0 +1,40 @@
+
+/*.main-container {
+	height: 1200px;
+	width: 100%;
+	background-color: #CCCCFF;
+}*/
+
+/*.my-container {
+	border: 1px solid gray;
+	background-color: #FF99FF;
+	border-radius: 5px;
+}*/
+
+.only-padding {
+	padding-left: 15px;
+}
+
+#header {	
+	border-bottom: thick solid gray;
+	padding-bottom: 20px;
+}
+
+#footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.list-group-item a {
+	display: none;
+}
+
+.list-group-item:hover a {
+	display: inline;
+	text-decoration: none;	
+}
+
+.checked {
+	color: red;
+	font-size: 1.5em;
+}
